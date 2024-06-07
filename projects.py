@@ -9,8 +9,6 @@ from wordcloud import WordCloud, STOPWORDS
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-#https://raw.githubusercontent.com/jneidel/job-titles/master/job-titles.json
-
 # Konfigurasi awal streamlit
 st.set_page_config(
     page_title = '', 
@@ -258,7 +256,10 @@ def layout(data_input):
     _, row3, _ = st.columns([0.1, 18, 0.1])
     
     row0.title('Compare Your Summary to a Job Description!')
-    row0.header('「 ✦ Byte Brigade 6A ✦ 」')
+    row0.mardown(
+        '<a href="https://github.com/ByteBrigade6A/final_projects/tree/main">「 ✦ Byte Brigade 6A ✦ 」</a>',
+        unsafe_allow_html = True
+    )
     row0.markdown('''
         Alat Pencocokan Deskripsi Pekerjaan dalam Resume memungkinkan\
         untuk dengan cepat membandingkan resume Anda yang sudah ada dengan\
