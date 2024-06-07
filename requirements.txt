@@ -1,0 +1,9 @@
+requests
+openpyxl
+pandas
+streamlit 
+matplotlib
+plotly
+nltk
+wordcloud
+scikit-learn
