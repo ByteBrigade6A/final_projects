@@ -256,8 +256,8 @@ def layout(data_input):
     _, row3, _ = st.columns([0.1, 18, 0.1])
     
     row0.title('Compare Your Summary to a Job Description!')
-    row0.mardown(
-        '<a href="https://github.com/ByteBrigade6A/final_projects/tree/main">「 ✦ Byte Brigade 6A ✦ 」</a>',
+    row0.mardown('''
+        <a href="https://github.com/ByteBrigade6A/final_projects/tree/main">「 ✦ Byte Brigade 6A ✦ 」</a>''',
         unsafe_allow_html = True
     )
     row0.markdown('''
