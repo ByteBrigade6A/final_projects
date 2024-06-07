@@ -381,7 +381,7 @@ def layout(data_input):
         row6.subheader('Word Cloud')
         row6.markdown(f'Gunakan kata - kata berikut untuk meningkatkan matching score dengan pekerjaan yang sedang dicari : {select_judul_loker}')
         fig_wc = wordcloud(deskripsi_full)
-        row6.pyplot(fig = fig_wc, use_container_width=False)
+        row6.pyplot(fig = fig_wc, use_container_width=True)
 
 @st.cache_resource
 def wordcloud(text):
